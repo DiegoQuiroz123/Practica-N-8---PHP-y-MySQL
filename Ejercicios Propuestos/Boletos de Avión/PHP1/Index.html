@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Boletos</title>
+    
+</head>
+<body>
+    <style>
+        .estilo{
+            font-size:50px;
+            background-color:blanchedalmond;
+
+        }
+    </style>
+    <label class="estilo">AEROLINE</label>
+    <FORM METHOD="post" ACTION="mis_datos.php">
+        <p>Nombre: <input type="text" name="nombre" size="30"></p>
+        <p>
+            Destino
+            <select size="1" name="destino">
+                <option selected value="Brasil">Brasil</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+        </p>
+        <p>Fecha de Nacimiento: <input type="text" name="fechanacimento" size="30"></p>
+        <p>
+            <input type="submit" value="Enviar datos" name="enviar">
+            <input type="reset" value="Restablecer" name="B2">
+        </p>
+    </FORM>
+</body>
+</html>
