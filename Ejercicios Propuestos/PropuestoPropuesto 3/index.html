@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body > 
+    <style>
+        table, td {
+            border: 2px solid black;
+            background-color:lightgray;
+            font: 60px;
+        }
+
+    </style>
+    <h1>Formulario de Inscripcion</h1>
+    <FORM METHOD="post" ACTION="form.php">
+        <table >
+            <tr>
+                <td>Nombre Completo:</td>
+                <td><input type="text" name="nombre" size="30" /></td>
+            </tr>
+            <tr>
+                <td>Direccion:</td>
+                <td><input type="text" name="direccion" size="30"></td>
+            </tr>
+            <tr>
+                <td>Correo Electronico:</td>
+                <td><input type="text" name="correo" size="30"></td>
+            </tr>
+            <tr>
+                <td>Contraseña:</td>
+                <td><input type="text" name="contra" size="30" ></td>
+            </tr>
+            <tr>
+                <td>Fecha de Nacimiento:</td>
+                <td><input type="text" name="fecha" size="30" ></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td>
+                    <input type="radio" name="sexo" value="Hombre" />Hombre
+                    <input type="radio" name="sexo" value="Mujer" />Mujer
+                </td>
+            </tr>
+            <tr>
+                <td>Por favor, elige los  <br>temas de interes :</td>
+                <td>
+                    <input type="checkbox" name="ficcion" value="Ficcion" />Ficcion
+                    <input type="checkbox" name="terror" value="Terror" />Terror<br>
+                    <input type="checkbox" name="accion" value="Accion" />Accion
+                    <input type="checkbox" name="comedia" value="Comedia" />Comedia<br>
+                    <input type="checkbox" name="suspenso" value="Suspenso" />Suspenso
+                </td>
+            </tr>
+             <tr>
+                <td>Selecciona tus  <br>aficiones:</td>
+                <td> 
+                <select size="4" name="aficiones" multiple >
+                <option value="Jugar futbol">Jugar futbol</option>
+                <option value="Leer">Leer</option>
+                <option value="Practicar Karate">Practicar Karate</option>
+                <option value="Jugar Ajedrez">Jugar Ajedrez</option>
+                <option value="Dormir">Dormir</option>
+            </select></td>
+            </tr>
+        </table>
+        <p>
+            <input type="submit" value="Enviar datos" name="enviar">
+            <input type="reset" value="Restablecer" name="B2">
+        </p>
+    </FORM>
+</body>
+
+</html>
